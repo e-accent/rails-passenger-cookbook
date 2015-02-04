@@ -6,4 +6,7 @@ description      'Installs/Configures picturepress'
 long_description 'Installs/Configures picturepress'
 version          '0.1.0'
 
-depends 'rbenv'
+depends 'rbenv', '~> 1.7.1'
+depends 'postfix', '~> 3.6.2'
+depends 'postgres', '~> 2.11.0'
+depends 'nginx', '~> 2.7.4'
