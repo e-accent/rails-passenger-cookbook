@@ -12,6 +12,18 @@ include_recipe "postfix::default"
 include_recipe "postgresql::client"
 include_recipe "postgresql::server"
 
+include_recipe "sudo::default"
+
+user "depolyer" do
+  supports :manage_home => true
+  comment "Depolyer"
+  uid 9999
+  gid "users"
+  home "/home/depolyer"
+  shell "/bin/bash"
+  password "$1$xfrwAnN3$9mtcSwB6qqXAK8WvbVE971"
+end
+
 rbenv_ruby "2.1.5" do
   global true
 end

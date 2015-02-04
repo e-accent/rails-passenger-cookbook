@@ -1,4 +1,11 @@
 {
+  "authorization": {
+    "sudo": {
+      "groups": ["admin", "wheel", "sysadmin"],
+      "users": ["depolyer", "vagrant"],
+      "passwordless": "true"
+    }
+  },
   "postgresql": {
     "password": {
       "postgres": "123456"
