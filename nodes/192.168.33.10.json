@@ -1,4 +1,9 @@
 {
+  "postgresql": {
+    "password": {
+      "postgres": "123456"
+    }
+  },
   "run_list": [
     "picturepress"
   ],

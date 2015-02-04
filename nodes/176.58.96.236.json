@@ -1,6 +1,11 @@
 {
+  "postgresql": {
+    "password": {
+      "postgres": "123456"
+    }
+  },
   "run_list": [
-    "picturepress"
+    "picturepress",
   ],
   "automatic": {
     "ipaddress": "176.58.96.236"

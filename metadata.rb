@@ -8,5 +8,5 @@ version          '0.1.0'
 
 depends 'rbenv', '~> 1.7.1'
 depends 'postfix', '~> 3.6.2'
-depends 'postgres', '~> 2.11.0'
+depends 'postgresql', '~> 3.4.14'
 depends 'nginx', '~> 2.7.4'
