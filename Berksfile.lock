@@ -1,5 +1,5 @@
 DEPENDENCIES
-  picturepress
+  rails_passenger
     path: .
     metadata: true
 
@@ -28,18 +28,18 @@ GRAPH
   ohai (2.0.1)
   openssl (2.0.2)
     chef-sugar (>= 0.0.0)
-  picturepress (0.1.0)
+  postfix (3.6.2)
+  postgresql (3.4.14)
+    apt (>= 1.9.0)
+    build-essential (>= 0.0.0)
+    openssl (>= 0.0.0)
+  rails_passenger (0.1.0)
     apt (~> 2.6.1)
     nginx (~> 2.7.4)
     postfix (~> 3.6.2)
     postgresql (~> 3.4.14)
     rbenv (~> 1.7.1)
     sudo (~> 2.7.1)
-  postfix (3.6.2)
-  postgresql (3.4.14)
-    apt (>= 1.9.0)
-    build-essential (>= 0.0.0)
-    openssl (>= 0.0.0)
   rbenv (1.7.1)
     apt (>= 0.0.0)
     build-essential (>= 0.0.0)

@@ -34,7 +34,7 @@
     "recipe[postgresql::client]",
     "recipe[postgresql::server]",
     "recipe[sudo::default]",
-    "picturepress",
+    "rails_passenger",
     "recipe[nginx::source]",
     "recipe[nginx::passenger]"
   ],
