@@ -1,3 +1,4 @@
+package "libsqlite3-dev"
 package "redis-server"
 package "nodejs"
 package "imagemagick"
@@ -6,6 +7,7 @@ include_recipe "rbenv::default"
 include_recipe "rbenv::ruby_build"
 
 include_recipe "nginx::default"
+include_recipe "nginx::passenger"
 
 include_recipe "postfix::default"
 

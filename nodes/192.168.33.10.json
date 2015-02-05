@@ -6,12 +6,16 @@
       "passwordless": "true"
     }
   },
+  "rbenv": {
+    "group_users": ["vagrant"]
+  },
   "postgresql": {
     "password": {
       "postgres": "123456"
     }
   },
   "run_list": [
+    "recipe[apt]",
     "picturepress"
   ],
   "automatic": {
