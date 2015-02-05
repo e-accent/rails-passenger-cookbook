@@ -2,8 +2,8 @@
   "authorization": {
     "sudo": {
       "groups": ["admin", "wheel", "sysadmin"],
-      // "users": ["depolyer", "vagrant"],
-      "users": ["depolyer"],
+      // "users": ["deployer", "vagrant"],
+      "users": ["deployer"],
       "passwordless": "true"
     }
   },

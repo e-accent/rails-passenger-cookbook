@@ -6,12 +6,12 @@ package "imagemagick"
 include_recipe "rbenv::default"
 include_recipe "rbenv::ruby_build"
 
-user "depolyer" do
+user "deployer" do
   supports :manage_home => true
-  comment "Depolyer"
+  comment "Deployer"
   uid 9999
   gid "users"
-  home "/home/depolyer"
+  home "/home/deployer"
   shell "/bin/bash"
   password "$1$xfrwAnN3$9mtcSwB6qqXAK8WvbVE971"
 end
