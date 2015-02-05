@@ -2,13 +2,14 @@
   "authorization": {
     "sudo": {
       "groups": ["admin", "wheel", "sysadmin"],
-      "users": ["depolyer", "vagrant"],
+      // "users": ["depolyer", "vagrant"],
+      "users": ["depolyer"],
       "passwordless": "true"
     }
   },
-  "rbenv": {
-    "group_users": ["vagrant"]
-  },
+  // "rbenv": {
+  //   "group_users": ["vagrant"]
+  // },
   "postgresql": {
     "password": {
       "postgres": "123456"
@@ -38,6 +39,6 @@
     "recipe[nginx::passenger]"
   ],
   "automatic": {
-    "ipaddress": "192.168.33.10"
+    "ipaddress": "PUT IP ADDRESS HERE!"
   }
 }

@@ -26,13 +26,13 @@
   },
   "run_list": [
     "recipe[apt]",
-    "recipe[nginx::source]",
-    "recipe[nginx::passenger]",
     "recipe[postfix::default]",
     "recipe[postgresql::client]",
     "recipe[postgresql::server]",
     "recipe[sudo::default]",
-    "picturepress"
+    "picturepress",
+    "recipe[nginx::source]",
+    "recipe[nginx::passenger]"
   ],
   "automatic": {
     "ipaddress": "176.58.96.236"
