@@ -6,16 +6,6 @@ package "imagemagick"
 include_recipe "rbenv::default"
 include_recipe "rbenv::ruby_build"
 
-include_recipe "nginx::default"
-include_recipe "nginx::passenger"
-
-include_recipe "postfix::default"
-
-include_recipe "postgresql::client"
-include_recipe "postgresql::server"
-
-include_recipe "sudo::default"
-
 user "depolyer" do
   supports :manage_home => true
   comment "Depolyer"
@@ -33,3 +23,17 @@ end
 rbenv_gem "bundler" do
   ruby_version "2.1.5"
 end
+
+rbenv_gem "passenger" do
+  ruby_version "2.1.5"
+end
+
+# include_recipe "nginx::source"
+# include_recipe "nginx::passenger"
+
+# include_recipe "postfix::default"
+
+# include_recipe "postgresql::client"
+# include_recipe "postgresql::server"
+
+# include_recipe "sudo::default"
